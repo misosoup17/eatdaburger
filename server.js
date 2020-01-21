@@ -1,6 +1,16 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
+var mysql      = require('mysql');
+var mysqlConnection;
+function new_mysqlConnection() {
+    mysqlConnection = mysql.createConnection({
+      host     : '3306',
+      user     : 'root',
+      database : 'burger_db',
+      password : 'Smisa5932475'
+    });
+}
 
 var port = process.env.PORT || 3000;
 
