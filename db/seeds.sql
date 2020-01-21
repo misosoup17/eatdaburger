@@ -1,3 +1,3 @@
-use burgers_db;
-insert into burgers(burger_name, devoured)
-values ("hamburger", false), ("cheeseburger",false),("veggieburger",false);
+USE burgers_db;
+INSERT INTO burgers(burger_name, devoured)
+VALUES ("hamburger",false), ("cheeseburger",false), ("veggieburger",false);
